@@ -17,3 +17,13 @@
 .link-underline:hover::after {
 	@apply w-[100%]
 }
+
+.icon {
+	@apply m-2 scale-125
+	cursor-pointer
+	duration-200;
+}
+.icon:hover {
+	@apply scale-150
+	duration-200;
+}
