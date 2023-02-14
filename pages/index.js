@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { SiGmail, SiLinkedin, SiGithub } from 'react-icons/si';
+import { SiGmail, SiLinkedin } from 'react-icons/si';
+import { RiHome2Fill } from 'react-icons/ri';
 import { ImFilePdf } from 'react-icons/im';
 import Link from 'next/link';
 import Welcome from './welcome';
@@ -48,14 +49,14 @@ export default function Home() {
 	};
 
 	return (
-		<div className="xl:container xl:mx-auto">
+		<div className="xl:container xl:mx-auto mt-10">
 			<div className="md:grid grid-cols-3">
-				<div className="absolute border-10 bg-slate-200 h-60 w-60">
-
+				<div className="absolute bg-gradient-to-br from-gray-100 to-transparent h-60 w-60 rounded-lg -z-10 top-0">
+					<div className="absolute bg-white h-60 w-60 rounded-lg -z-0 left-6 top-6"></div>
 				</div>
-				<nav className="col-span-3 flex">
-					<a onClick={toggleHome}>Home</a>
-					<div className="absolute flex right-0">
+				<nav className="col-span-3 relative">
+					<div className="flex absolute right-0">
+						<RiHome2Fill className="icon" onClick={toggleHome} />
 						<Link href="mailto:everettlindsay@gmail.com">
 							<SiGmail className="icon" />
 						</Link>
@@ -67,7 +68,7 @@ export default function Home() {
 						</Link>
 					</div>
 				</nav>
-				<div className="col-span-2 m-10">
+				<div className="col-span-2 m-10 md:mx-32">
 					{ showHome ? <Welcome /> : null }
 					{ showMern ? <Mern /> : null }
 					{ showTypeScript ? <TypeScript /> : null }
