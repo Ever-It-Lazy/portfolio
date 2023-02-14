@@ -26,5 +26,9 @@
 }
 
 .hdr1 {
-	@apply text-2xl pb-6;
+	@apply text-5xl pb-6;
+}
+
+.hdr2 {
+	@apply text-3xl pb-6;
 }

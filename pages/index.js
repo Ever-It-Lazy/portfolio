@@ -44,11 +44,11 @@ export default function Home() {
 	return (
 		<div className="xl:container xl:mx-auto">
 			<div className="relative md:grid grid-cols-3 h-[100vh]">
-				<div className="absolute bg-gradient-to-br from-gray-100 to-transparent h-60 w-60 rounded-lg -z-10 top-0">
-					<div className="absolute bg-white h-60 w-60 rounded-lg z-0 left-6 top-6"></div>
+				<div className="absolute bg-gradient-to-br from-slate-400 via-slate-300 h-60 w-60 rounded-lg -z-10 top-0">
+					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 left-5 top-5"></div>
 				</div>
 				<nav className="relative col-span-3">
-					<div className="flex absolute right-0 m-6">
+					<div className="flex absolute right-0 m-5">
 						<RiHome2Fill className="icon" onClick={toggleHome} />
 						<Link href="mailto:everettlindsay@gmail.com">
 							<SiGmail className="icon" />
@@ -65,12 +65,13 @@ export default function Home() {
 					{ showHome ? <Welcome /> : null }
 					{ showMern ? <Mern /> : null }
 					{ showTypeScript ? <TypeScript /> : null }
-					{ showNext ? <Next /> : null }
+					{showNext ? <Next /> : null}
 				</div>
 				<div className="col-span-1">
-					<h2 className="hdr1">Demonstrations</h2>
-					<ul className="p-6 rounded-xl bg-gradient-to-br from-gray-100 to-transparent">
+					<h2 className="hdr2">Demonstrations</h2>
+					<ul className="relative p-6 rounded-xl bg-gradient-to-br from-slate-400 via-slate-300">
 						<li className="leading-9">
+							<div className="absolute bg-slate-300 h-[100%] w-[100%] rounded-xl z-0 left-0.5 top-0.5"></div>
 							<a onClick={toggleMern} className="link-underline">MERN</a>
 						</li>
 						<li className="leading-9">
@@ -81,8 +82,8 @@ export default function Home() {
 						</li>
 					</ul>
 				</div>
-				<div className="absolute bg-gradient-to-br from-transparent to-gray-100 h-60 w-60 rounded-lg -z-10 bottom-0 right-0">
-					<div className="absolute bg-white h-60 w-60 rounded-lg z-0 right-6 bottom-6"></div>
+				<div className="absolute bg-gradient-to-br from-transparent via-slate-300 to-slate-400 h-60 w-60 rounded-lg -z-10 bottom-0 right-0">
+					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 right-5 bottom-5"></div>
 				</div>
 			</div>
 		</div>
