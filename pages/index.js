@@ -1,7 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { RiHome2Fill } from 'react-icons/ri';
 import { ImFilePdf } from 'react-icons/im';
@@ -11,9 +7,6 @@ import Mern from './mern';
 import { useState } from 'react';
 import Next from './nextjs';
 import TypeScript from './typescript';
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 	const [showHome, setShowHome] = useState(true);
