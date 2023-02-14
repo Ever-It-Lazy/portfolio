@@ -48,40 +48,45 @@ export default function Home() {
 	};
 
 	return (
-		<div className="grid grid-cols-3">
-			<nav className="col-span-3 flex">
-				<a onClick={toggleHome}>Home</a>
-				<div className="absolute flex right-0">
-					<Link href="mailto:everettlindsay@gmail.com">
-						<SiGmail className="icon" />
-					</Link>
-					<Link href="https://www.linkedin.com/in/everett-l-59249691/" target="_blank">
-						<SiLinkedin className="icon"/>
-					</Link>
-					<Link href="https://drive.google.com/file/d/1-66zH-VSrFpuf_KWtoh3Q5dPx-6HWn0C/view?usp=sharing" target="_blank">
-						<ImFilePdf className="icon" />
-					</Link>
+		<div className="xl:container xl:mx-auto">
+			<div className="md:grid grid-cols-3">
+				<div className="absolute border-10 bg-slate-200 h-60 w-60">
+
 				</div>
-			</nav>
-			<div className="col-span-2 m-10">
-				{ showHome ? <Welcome /> : null }
-				{ showMern ? <Mern /> : null }
-				{ showTypeScript ? <TypeScript /> : null }
-				{ showNext ? <Next /> : null }
-			</div>
-			<div className="col-span-1">
-				<h2 className="text-xl">Demonstrations</h2>
-				<ul className="border-t-2 border-l-2 p-5">
-					<li>
-						<a onClick={toggleMern} className="link-underline">MERN</a>
-					</li>
-					<li>
-						<a onClick={toggleTypeScript} className="link-underline">TypeScript</a>
-					</li>
-					<li>
-						<a onClick={toggleNext} className="link-underline">Next.js</a>
-					</li>
-				</ul>
+				<nav className="col-span-3 flex">
+					<a onClick={toggleHome}>Home</a>
+					<div className="absolute flex right-0">
+						<Link href="mailto:everettlindsay@gmail.com">
+							<SiGmail className="icon" />
+						</Link>
+						<Link href="https://www.linkedin.com/in/everett-l-59249691/" target="_blank">
+							<SiLinkedin className="icon"/>
+						</Link>
+						<Link href="https://drive.google.com/file/d/1-66zH-VSrFpuf_KWtoh3Q5dPx-6HWn0C/view?usp=sharing" target="_blank">
+							<ImFilePdf className="icon" />
+						</Link>
+					</div>
+				</nav>
+				<div className="col-span-2 m-10">
+					{ showHome ? <Welcome /> : null }
+					{ showMern ? <Mern /> : null }
+					{ showTypeScript ? <TypeScript /> : null }
+					{ showNext ? <Next /> : null }
+				</div>
+				<div className="col-span-1">
+					<h2 className="hdr1">Demonstrations</h2>
+					<ul className="p-6 rounded-xl bg-gradient-to-br from-gray-100 to-transparent">
+						<li className="leading-9">
+							<a onClick={toggleMern} className="link-underline">MERN</a>
+						</li>
+						<li className="leading-9">
+							<a onClick={toggleTypeScript} className="link-underline">TypeScript</a>
+						</li>
+						<li className="leading-9">
+							<a onClick={toggleNext} className="link-underline">Next.js</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	)
