@@ -5,15 +5,52 @@ import styles from '@/styles/Home.module.css'
 import { SiGmail, SiLinkedin, SiGithub } from 'react-icons/si';
 import { ImFilePdf } from 'react-icons/im';
 import Link from 'next/link';
+import Welcome from './welcome';
+import Mern from './mern';
+import { useState } from 'react';
+import Next from './nextjs';
+import TypeScript from './typescript';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+	const [showHome, setShowHome] = useState(true);
+	const [showMern, setShowMern] = useState(false);
+	const [showTypeScript, setShowTypeScript] = useState(false);
+	const [showNext, setShowNext] = useState(false);
+
+	const toggleOff = () => {
+		setShowHome(false);
+		setShowMern(false);
+		setShowTypeScript(false);
+		setShowNext(false);
+	}
+
+	const toggleHome = () => {
+		toggleOff();
+		setShowHome(true);
+	};
+
+	const toggleMern = () => {
+		toggleOff();
+		setShowMern(true);
+	};
+
+	const toggleTypeScript = () => {
+		toggleOff();
+		setShowTypeScript(true);
+	};
+
+	const toggleNext = () => {
+		toggleOff();
+		setShowNext(true);
+	};
+
 	return (
 		<div className="grid grid-cols-3">
 			<nav className="col-span-3 flex">
-				<a href="./home">Home</a>
+				<a onClick={toggleHome}>Home</a>
 				<div className="absolute flex right-0">
 					<Link href="mailto:everettlindsay@gmail.com">
 						<SiGmail className="icon" />
@@ -27,37 +64,22 @@ export default function Home() {
 				</div>
 			</nav>
 			<div className="col-span-2 m-10">
-				<div>
-					<h1>Welcome</h1>
-					<p>
-					My name is Everett Lindsay. I'm a full stack web developer.
-					For the past 20 years I've used my Washington, DC location to
-					mostly serve as a government contractor. But as positions
-					have become increasingly remote, my interest has turned
-					toward pure JavaScript stacks.
-					</p>
-					<p>
-					Most of my contracting work is private, involving some level
-					of clearance. But I forged a favorable reputation across the
-					various teams I've participated in, and I'd eagerly pass on
-					my references.
-					</p>
-					<p>
-					Let these demonstrations serve as evidence of my toolkit.
-					</p>
-				</div>
+				{ showHome ? <Welcome /> : null }
+				{ showMern ? <Mern /> : null }
+				{ showTypeScript ? <TypeScript /> : null }
+				{ showNext ? <Next /> : null }
 			</div>
 			<div className="col-span-1">
-				<h2>Demonstrations</h2>
-				<ul>
+				<h2 className="text-xl">Demonstrations</h2>
+				<ul className="border-t-2 border-l-2 p-5">
 					<li>
-						<a href="https://mern-tutorial-2.herokuapp.com/" className="link-underline">MERN</a>
+						<a onClick={toggleMern} className="link-underline">MERN</a>
 					</li>
 					<li>
-						<a href="https://typescript-tutorial-1.web.app/" className="link-underline">TypeScript</a>
+						<a onClick={toggleTypeScript} className="link-underline">TypeScript</a>
 					</li>
 					<li>
-						<a href="https://nextfire-app-hazel.vercel.app/" className="link-underline">Next.JS</a>
+						<a onClick={toggleNext} className="link-underline">Next.JS</a>
 					</li>
 				</ul>
 			</div>
