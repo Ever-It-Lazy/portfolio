@@ -79,7 +79,7 @@ export default function Home() {
 						<a onClick={toggleTypeScript} className="link-underline">TypeScript</a>
 					</li>
 					<li>
-						<a onClick={toggleNext} className="link-underline">Next.JS</a>
+						<a onClick={toggleNext} className="link-underline">Next.js</a>
 					</li>
 				</ul>
 			</div>

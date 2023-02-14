@@ -6,21 +6,16 @@ export default function TypeScript() {
 		<div>
 			<h1 className="text-2xl">TypeScript</h1>
 			<ul>
-				<li>Express</li>
-				<li>React-Bootstrap</li>
-				<li>MongoDB</li>
-				<li>Redux Toolkit</li>
-				<li>Postman</li>
-				<li>Cloudinary</li>
-				<li>Heroku</li>
-				<li>Material UI</li>
-				<li>Vite</li>
-				<li>Chance</li>
+				<li>TypeScript</li>
+				<li>html-react-parser</li>
+				<li>react-beautiful-dnd</li>
 			</ul>
-			<ul>
-				<li><a href="https://typescript-tutorial-1.web.app/" className="link-underline">View Site</a></li>
+			<ul className="flex items-center">
 				<li>
-					<Link href="https://github.com/Ever-It-Lazy/Notezipper-rebuild" target="_blank">
+					<a href="https://typescript-tutorial-1.web.app/" className="link-underline">View Site</a>
+				</li>
+				<li>
+					<Link href="https://github.com/Ever-It-Lazy/typescript-tutorial" target="_blank">
 						<SiGithub className="icon" />
 					</Link>
 				</li>
