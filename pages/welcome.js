@@ -1,7 +1,7 @@
 export default function Welcome() {
 	return (
 		<div>
-			<h1 className="text-2xl">Welcome</h1>
+			<h1 className="hdr1">Welcome</h1>
 			<p>
 			My name is Everett Lindsay. I'm a full stack web developer.
 			For the past 20 years I've used my Washington, DC location to
