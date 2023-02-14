@@ -42,13 +42,13 @@ export default function Home() {
 	};
 
 	return (
-		<div className="xl:container xl:mx-auto mt-10">
-			<div className="md:grid grid-cols-3">
+		<div className="xl:container xl:mx-auto">
+			<div className="relative md:grid grid-cols-3 h-[100vh]">
 				<div className="absolute bg-gradient-to-br from-gray-100 to-transparent h-60 w-60 rounded-lg -z-10 top-0">
-					<div className="absolute bg-white h-60 w-60 rounded-lg -z-0 left-6 top-6"></div>
+					<div className="absolute bg-white h-60 w-60 rounded-lg z-0 left-6 top-6"></div>
 				</div>
-				<nav className="col-span-3 relative">
-					<div className="flex absolute right-0">
+				<nav className="relative col-span-3">
+					<div className="flex absolute right-0 m-6">
 						<RiHome2Fill className="icon" onClick={toggleHome} />
 						<Link href="mailto:everettlindsay@gmail.com">
 							<SiGmail className="icon" />
@@ -80,6 +80,9 @@ export default function Home() {
 							<a onClick={toggleNext} className="link-underline">Next.js</a>
 						</li>
 					</ul>
+				</div>
+				<div className="absolute bg-gradient-to-br from-transparent to-gray-100 h-60 w-60 rounded-lg -z-10 bottom-0 right-0">
+					<div className="absolute bg-white h-60 w-60 rounded-lg z-0 right-6 bottom-6"></div>
 				</div>
 			</div>
 		</div>
