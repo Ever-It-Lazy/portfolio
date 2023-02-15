@@ -25,7 +25,7 @@ export default function Next() {
 				</ul>
 				<ul className="flex items-center">
 					<li>
-						<a href="https://nextfire-app-hazel.vercel.app/" className="link-underline">View Site</a>
+						<a href="https://nextfire-app-hazel.vercel.app/" className="link-underline" target="_blank">View Site</a>
 					</li>
 					<li>
 						<Link href="https://github.com/Ever-It-Lazy/nextfire-app" target="_blank">

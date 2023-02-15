@@ -28,7 +28,7 @@ export default function TypeScript() {
 				</ul>
 				<ul className="flex items-center">
 					<li>
-						<a href="https://typescript-tutorial-1.web.app/" className="link-underline">View Site</a>
+						<a href="https://typescript-tutorial-1.web.app/" className="link-underline" target="_blank">View Site</a>
 					</li>
 					<li>
 						<Link href="https://github.com/Ever-It-Lazy/typescript-tutorial" target="_blank">
