@@ -6,7 +6,22 @@ export default function TypeScript() {
 		<div>
 			<h1>TypeScript</h1>
 			<div className="side-border">
-				<ul>
+				<p>
+					TypeScript is also an extremely popular package.
+					Purportedly, it "saves time" by eliminating errors that originate
+					from JavaScript's lack of native type enforcement?
+				</p>
+				<p>
+					Having spent my entire career using duck-typed, interpreted languages...on
+					a project like this, I lost quite a chunk of time in compilation errors, struggling
+					to manually type everything.
+				</p>
+				<p>
+					(I suppose it all comes down to whether the time spent
+					writing TypeScript &lt; the time spent fixing the particular class of bugs
+					that it eliminates?)
+				</p>
+				<ul className="capsules">
 					<li>TypeScript</li>
 					<li>html-react-parser</li>
 					<li>react-beautiful-dnd</li>

@@ -6,7 +6,17 @@ export default function Next() {
 		<div>
 			<h1>Next.js</h1>
 			<div className="side-border">
-				<ul>
+				<p>
+					By the time I sought this tutorial, I had the sense that
+					most React projects were the result of cobbling together a favored
+					bunch of Node packages into makeshift frameworks.
+				</p>
+				<p>
+					Well aware that my focus is fullstack web development,
+					I concentrated on finding the preexisting React framework
+					that already does this the best. Why reinvent the wheel?
+				</p>
+				<ul className="capsules">
 					<li>Firebase</li>
 					<li>Cloud Firestore</li>
 					<li>Next.js</li>

@@ -7,19 +7,12 @@ export default function Tailwind() {
 			<h1 className="hdr1">Tailwind CSS</h1>
 			<div className="side-border">
 				<p>
-					This portfolio is overwhelmingly <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley's</a> work:
-					give credit where credit is due. I took this opportunity to demonstrate some
-					proficiency with Tailwind (clearly absent from Ian's markup) rather than
-					sell myself as a designer.
+					This portfolio is overwhelmingly <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley</a>'s
+					design: give credit where credit is due. Refactoring his frontend into maintainable
+					Tailwind CSS struck me as a far more valuable demonstration than selling my
+					merits as a frontend designer.
 				</p>
-				<p>
-					Next.js was used as framework, because based on my experience
-					it's the easiest way to throw together a React web application.
-				</p>
-				<p>
-					This is all static content, so I can host it from anywhere. I went with Firebase.
-				</p>
-				<ul>
+				<ul className="capsules">
 					<li>Tailwind CSS</li>
 					<li>Next.js</li>
 					<li>Firebase</li>

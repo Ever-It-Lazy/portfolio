@@ -42,10 +42,20 @@
 		@apply m-2 scale-125
 		cursor-pointer
 		hover:scale-150
+		hover:text-slate-500
 		duration-200;
 	}
 
 	.side-border {
-		@apply border-slate-400 border-l-2 pl-6;
+		@apply
+		 border-slate-400 border-l-2 pl-6;
+	}
+
+	.capsules {
+		@apply space-x-1.5 space-y-1.5;
+	}
+
+	.capsules li {
+		@apply inline-block bg-slate-400 px-2 rounded-full;
 	}
 }
