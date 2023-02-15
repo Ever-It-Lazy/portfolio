@@ -1,14 +1,15 @@
 import '@/styles/globals.css'
-import { Baskervville } from '@next/font/google'
+import { Numans } from '@next/font/google'
 
-const basker = Baskervville({
+const font = Numans({
 	weight: '400',
-	subsets: ['latin']
+	subsets: ['latin'],
+	variable: '--font',
 })
 
 export default function App({ Component, pageProps }) {
 	return (
-		<main className={basker.className}>
+		<main className={`${font.variable} font-sans`}>
 			<Component {...pageProps} />
 		</main>
 	);
