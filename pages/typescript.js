@@ -4,8 +4,8 @@ import { SiGithub } from 'react-icons/si';
 export default function TypeScript() {
 	return (
 		<div>
-			<h1 className="hdr1">TypeScript</h1>
-			<div className="border-slate-400 border-l-2 pl-6">
+			<h1>TypeScript</h1>
+			<div className="side-border">
 				<ul>
 					<li>TypeScript</li>
 					<li>html-react-parser</li>

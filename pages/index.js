@@ -77,7 +77,7 @@ export default function Home() {
 					{ showTailwind ? <Tailwind /> : null }
 				</div>
 				<div className="col-span-1">
-					<h2 className="hdr2">Demonstrations</h2>
+					<h2>Demonstrations</h2>
 					<ul className="relative p-6 rounded-xl bg-gradient-to-br from-slate-400 via-slate-300">
 						<li className="leading-9">
 							<div className="absolute bg-slate-300 h-[100%] w-[100%] rounded-xl z-0 left-0.5 top-0.5"></div>

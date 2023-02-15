@@ -5,18 +5,18 @@ export default function Tailwind() {
 	return (
 		<div>
 			<h1 className="hdr1">Tailwind CSS</h1>
-			<div className="border-slate-400 border-l-2 pl-6">
-				<p className="mb-4">
+			<div className="side-border">
+				<p>
 					This portfolio is overwhelmingly <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley's</a> work:
 					give credit where credit is due. I took this opportunity to demonstrate some
 					proficiency with Tailwind (clearly absent from Ian's markup) rather than
 					sell myself as a designer.
 				</p>
-				<p className="mb-4">
+				<p>
 					Next.js was used as framework, because based on my experience
 					it's the easiest way to throw together a React web application.
 				</p>
-				<p className="mb-4">
+				<p>
 					This is all static content, so I can host it from anywhere. I went with Firebase.
 				</p>
 				<ul>

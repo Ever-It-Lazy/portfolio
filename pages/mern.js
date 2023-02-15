@@ -4,18 +4,18 @@ import { SiGithub } from 'react-icons/si';
 export default function Mern() {
 	return (
 		<div>
-			<h1 className="hdr1">MERN</h1>
-			<div className="border-slate-400 border-l-2 pl-6">
-				<p className="mb-4">
+			<h1>MERN</h1>
+			<div className="side-border">
+				<p>
 					(Use my email address to log in. The password is "password.")
 				</p>
-				<p className="mb-4">
+				<p>
 					I chose MERN because it's a full JavaScript stack. I suspect
 					using the same language on both the frontend and the backend will
 					be easier in the long term than a continued investment in
 					mastering separate client and server side technologies.
 				</p>
-				<p className="mb-4">
+				<p>
 					Of all the fullstack options, MERN appealed to me, because React
 					is the most popular JavaScript library, bar none.
 				</p>

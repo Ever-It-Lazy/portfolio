@@ -4,8 +4,8 @@ import { SiGithub } from 'react-icons/si';
 export default function Next() {
 	return (
 		<div>
-			<h1 className="hdr1">Next.js</h1>
-			<div className="border-slate-400 border-l-2 pl-6">
+			<h1>Next.js</h1>
+			<div className="side-border">
 				<ul>
 					<li>Firebase</li>
 					<li>Cloud Firestore</li>
