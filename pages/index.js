@@ -72,7 +72,7 @@ export default function Home() {
 					</div>
 				</nav>
 
-				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32">
+				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32 h-[30rem]">
 					{ showHome ? <Welcome /> : null }
 					{ showMern ? <Mern /> : null }
 					{ showTypeScript ? <TypeScript /> : null }
