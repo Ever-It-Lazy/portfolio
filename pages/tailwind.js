@@ -5,7 +5,7 @@ export default function Tailwind() {
 	return (
 		<div>
 			<h1 className="hdr1">Tailwind CSS</h1>
-			<div className="border-l-2 pl-6">
+			<div className="border-slate-400 border-l-2 pl-6">
 				<p className="mb-4">
 					This portfolio is overwhelmingly <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley's</a> work:
 					give credit where credit is due. I took this opportunity to demonstrate some

@@ -2,7 +2,7 @@ export default function Welcome() {
 	return (
 		<div>
 			<h1 className="hdr1">Hello World</h1>
-			<div className="border-l-2 pl-6">
+			<div className="border-slate-400 border-l-2 pl-6">
 				<p className="mb-4">
 					My name is Everett Lindsay. I'm a full stack web developer.
 					For the past 20 years I've mostly served as a government

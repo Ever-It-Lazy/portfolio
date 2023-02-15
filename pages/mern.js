@@ -5,7 +5,7 @@ export default function Mern() {
 	return (
 		<div>
 			<h1 className="hdr1">MERN</h1>
-			<div className="border-l-2 pl-6">
+			<div className="border-slate-400 border-l-2 pl-6">
 				<p className="mb-4">
 					(Use my email address to log in. The password is "password.")
 				</p>
