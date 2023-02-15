@@ -26,9 +26,9 @@ export default function TypeScript() {
 					<li>html-react-parser</li>
 					<li>react-beautiful-dnd</li>
 				</ul>
-				<ul className="flex items-center">
+				<ul className="flex items-center mt-4 space-x-1">
 					<li>
-						<a href="https://typescript-tutorial-1.web.app/" className="link-underline" target="_blank">View Site</a>
+						<a href="https://typescript-tutorial-1.web.app/" className="link-underline text-sm md:text-lg" target="_blank">View Site</a>
 					</li>
 					<li>
 						<Link href="https://github.com/Ever-It-Lazy/typescript-tutorial" target="_blank">

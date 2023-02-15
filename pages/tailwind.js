@@ -17,7 +17,7 @@ export default function Tailwind() {
 					<li>Next.js</li>
 					<li>Firebase</li>
 				</ul>
-				<ul className="flex items-center">
+				<ul className="flex items-center mt-4 space-x-1">
 					<li>
 						<Link href="https://github.com/Ever-It-Lazy/typescript-tutorial" target="_blank">
 							<SiGithub className="icon" />
