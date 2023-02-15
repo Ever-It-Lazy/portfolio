@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
-import { Numans } from '@next/font/google'
+import { Raleway } from '@next/font/google'
 
-const font = Numans({
+const font = Raleway({
 	weight: '400',
 	subsets: ['latin'],
 	variable: '--font',
