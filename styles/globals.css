@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	@apply text-slate-700
+}
 
 .link-underline {
 	@apply relative
@@ -10,7 +13,7 @@
 }
 .link-underline::after {
 	@apply content-[''] absolute
-	bg-gray-500
+	bg-slate-400
 	h-[2px] w-0 left-0 -bottom-[5px]
 	rounded-xl duration-300;
 }
