@@ -7,18 +7,21 @@ import Mern from './mern';
 import { useState } from 'react';
 import Next from './nextjs';
 import TypeScript from './typescript';
+import Tailwind from './tailwind';
 
 export default function Home() {
 	const [showHome, setShowHome] = useState(true);
 	const [showMern, setShowMern] = useState(false);
 	const [showTypeScript, setShowTypeScript] = useState(false);
 	const [showNext, setShowNext] = useState(false);
+	const [showTailwind, setShowTailwind] = useState(false);
 
 	const toggleOff = () => {
 		setShowHome(false);
 		setShowMern(false);
 		setShowTypeScript(false);
 		setShowNext(false);
+		setShowTailwind(false);
 	}
 
 	const toggleHome = () => {
@@ -39,6 +42,11 @@ export default function Home() {
 	const toggleNext = () => {
 		toggleOff();
 		setShowNext(true);
+	};
+
+	const toggleTailwind = () => {
+		toggleOff();
+		setShowTailwind(true);
 	};
 
 	return (
@@ -65,7 +73,8 @@ export default function Home() {
 					{ showHome ? <Welcome /> : null }
 					{ showMern ? <Mern /> : null }
 					{ showTypeScript ? <TypeScript /> : null }
-					{showNext ? <Next /> : null}
+					{ showNext ? <Next /> : null }
+					{ showTailwind ? <Tailwind /> : null }
 				</div>
 				<div className="col-span-1">
 					<h2 className="hdr2">Demonstrations</h2>
@@ -79,6 +88,9 @@ export default function Home() {
 						</li>
 						<li className="leading-9">
 							<a onClick={toggleNext} className="link-underline">Next.js</a>
+						</li>
+						<li className="leading-9">
+							<a onClick={toggleTailwind} className="link-underline">Tailwind CSS</a>
 						</li>
 					</ul>
 				</div>

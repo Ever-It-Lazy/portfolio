@@ -6,9 +6,22 @@ export default function Mern() {
 		<div>
 			<h1 className="hdr1">MERN</h1>
 			<div className="border-l-2 pl-6">
-				<ul>
-					<li>Express</li>
-					<li>React-Bootstrap</li>
+				<p className="mb-4">
+					(Use my email address to log in. The password is "password.")
+				</p>
+				<p className="mb-4">
+					I chose MERN because it's a full JavaScript stack. I suspect
+					using the same language on both the frontend and the backend will
+					be easier in the long term than a continued investment in
+					mastering separate client and server side technologies.
+				</p>
+				<p className="mb-4">
+					Of all the fullstack options, MERN appealed to me, because React
+					is the most popular JavaScript library, bar none.
+				</p>
+				<ul className="inline-block">
+					<li className="inline-block">Express</li>
+					<li className="inline-block">React-Bootstrap</li>
 					<li>MongoDB</li>
 					<li>Redux Toolkit</li>
 					<li>Postman</li>
