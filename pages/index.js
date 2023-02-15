@@ -1,6 +1,7 @@
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { RiHome2Fill } from 'react-icons/ri';
 import { ImFilePdf } from 'react-icons/im';
+import { HiOutlineMoon, HiSun } from 'react-icons/hi';
 import Link from 'next/link';
 import Welcome from './welcome';
 import Mern from './mern';
@@ -15,6 +16,7 @@ export default function Home() {
 	const [showTypeScript, setShowTypeScript] = useState(false);
 	const [showNext, setShowNext] = useState(false);
 	const [showTailwind, setShowTailwind] = useState(false);
+	const [darkMode, setDarkMode] = useState(false);
 
 	const toggleOff = () => {
 		setShowHome(false);
@@ -49,9 +51,13 @@ export default function Home() {
 		setShowTailwind(true);
 	};
 
+	const toggleDarkMode = () => {
+		setDarkMode(!darkMode);
+	};
+
 	return (
 		<div className="xl:container xl:mx-auto">
-			<div className="relative md:grid grid-cols-3 h-[100vh]">
+			<div className="relative md:grid grid-cols-3 min-h-screen max-h-full">
 				{/* top left border */}
 				<div className="absolute bg-gradient-to-br from-slate-400 via-slate-300 h-60 w-60 rounded-lg -z-10">
 					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 left-5 top-5"></div>
@@ -59,6 +65,11 @@ export default function Home() {
 
 				<nav className="relative col-span-3">
 					<div className="flex absolute right-0 m-5">
+						{
+							darkMode
+								? <HiSun className="icon" onClick={toggleDarkMode} />
+								: <HiOutlineMoon className="icon" onClick={toggleDarkMode} />
+						}
 						<RiHome2Fill className="icon" onClick={toggleHome} />
 						<Link href="mailto:everettlindsay@gmail.com">
 							<SiGmail className="icon" />
@@ -72,7 +83,7 @@ export default function Home() {
 					</div>
 				</nav>
 
-				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32 h-[30rem]">
+				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32 h-auto sm:h-[28rem]">
 					{ showHome ? <Welcome /> : null }
 					{ showMern ? <Mern /> : null }
 					{ showTypeScript ? <TypeScript /> : null }
