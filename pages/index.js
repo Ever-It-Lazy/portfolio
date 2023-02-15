@@ -52,9 +52,11 @@ export default function Home() {
 	return (
 		<div className="xl:container xl:mx-auto">
 			<div className="relative md:grid grid-cols-3 h-[100vh]">
-				<div className="absolute bg-gradient-to-br from-slate-400 via-slate-300 h-60 w-60 rounded-lg -z-10 top-0">
+				{/* top left border */}
+				<div className="absolute bg-gradient-to-br from-slate-400 via-slate-300 h-60 w-60 rounded-lg -z-10">
 					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 left-5 top-5"></div>
 				</div>
+
 				<nav className="relative col-span-3">
 					<div className="flex absolute right-0 m-5">
 						<RiHome2Fill className="icon" onClick={toggleHome} />
@@ -69,13 +71,15 @@ export default function Home() {
 						</Link>
 					</div>
 				</nav>
-				<div className="col-span-2 m-10 md:mx-32">
+
+				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32">
 					{ showHome ? <Welcome /> : null }
 					{ showMern ? <Mern /> : null }
 					{ showTypeScript ? <TypeScript /> : null }
 					{ showNext ? <Next /> : null }
 					{ showTailwind ? <Tailwind /> : null }
 				</div>
+
 				<div className="col-span-1">
 					<h2>Demonstrations</h2>
 					<ul className="relative p-6 rounded-xl bg-gradient-to-br from-slate-400 via-slate-300">
@@ -94,6 +98,8 @@ export default function Home() {
 						</li>
 					</ul>
 				</div>
+
+				{/* bottom right border */}
 				<div className="absolute bg-gradient-to-br from-transparent via-slate-300 to-slate-400 h-60 w-60 rounded-lg -z-10 bottom-0 right-0">
 					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 right-5 bottom-5"></div>
 				</div>
