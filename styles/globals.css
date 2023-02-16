@@ -64,7 +64,7 @@
 	}
 
 	.slide-in {
-		@apply absolute w-fit
+		@apply sm:absolute w-fit
 		transform duration-200
 		opacity-100 scale-x-100 translate-x-0;
 	}
