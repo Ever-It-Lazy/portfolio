@@ -14,7 +14,7 @@ export default function Welcome({ show }) {
 					to explore the industry's advances.
 				</p>
 				<p>
-					My profile is svelt: the majority of my career
+					My profile is svelte: the majority of my career
 					has involved some level of clearance, leaving little to
 					publicize. I showcase my sandbox experiments here to
 					demonstrate how my knowledge of React could translate to your
