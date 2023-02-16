@@ -8,8 +8,8 @@ export default function Tailwind() {
 			<div className="side-border">
 				<p>
 					Give credit where credit is due
-					to <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley</a>'s
-					design. Refactoring his frontend into maintainable
+					to <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley</a> for
+					the inspiration. Refactoring his frontend into maintainable
 					Tailwind CSS struck me as the more valuable demonstration
 					of my typical contribution to a team's productivity.
 					I <em>can</em> design, but fullstack development is my jam.

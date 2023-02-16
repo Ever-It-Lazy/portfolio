@@ -14,14 +14,14 @@ export default function Welcome() {
 					to explore the industry's advances.
 				</p>
 				<p>
-					The majority of my career involved some level of clearance,
-					leaving me with an anemic public presence. Showcasing my
-					sandbox experiments here helps demonstrate how my abilities
-					could translate to your organization. For a real world
-					sense of my performance, I encourage requesting my career,
-					and I've made concerted effort to not burn bridges. Don't just
-					take my word for it: let my former bosses tell you what you're
-					missing.
+					My profile is svelt: the majority of my career
+					has involved some level of clearance, leaving little to
+					publicize. I showcase my sandbox experiments here to
+					demonstrate how my knowledge of React could translate to your
+					organization. For a real world sense of my performance, I
+					encourage requesting my references, as I've made concerted
+					effort to not burn bridges. Don't just take my word for it:
+					let my former employers tell you what you're missing.
 				</p>
 			</div>
 		</div>
