@@ -21,7 +21,7 @@ export default function Tailwind({ show }) {
 				</ul>
 				<ul className="flex items-center mt-4 space-x-1">
 					<li>
-						<Link href="https://github.com/Ever-It-Lazy/typescript-tutorial" target="_blank">
+						<Link href="https://github.com/Ever-It-Lazy/portfolio" target="_blank">
 							<SiGithub className="icon" />
 						</Link>
 					</li>
