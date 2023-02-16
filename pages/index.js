@@ -106,7 +106,7 @@ export default function Home() {
 				</div>
 
 				<div className="col-span-1 ml-10 md:ml-0">
-					<h2>Demonstrations</h2>
+					<h2 className="text-2xl sm:text-3xl">Demonstrations</h2>
 					<ul className="relative p-6 rounded-xl bg-gradient-to-br from-slate-400 via-slate-300 dark:via-slate-800">
 						<li className="leading-9">
 							<div className="absolute bg-slate-300 dark:bg-slate-800 h-full w-full rounded-xl z-0 left-0.5 top-0.5"></div>
