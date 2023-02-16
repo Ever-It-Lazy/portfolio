@@ -53,24 +53,38 @@ export default function Home() {
 
 	const toggleDarkMode = () => {
 		setDarkMode(!darkMode);
+
+		const theme = darkMode ? "dark" : "light";
+
+		// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+
+		localStorage.theme = theme;
+
+		// Whenever the user explicitly chooses to respect the OS preference
+		//localStorage.removeItem('theme')
 	};
 
 	return (
 		<div className="xl:container xl:mx-auto">
 			<div className="relative md:grid grid-cols-3 min-h-screen max-h-full">
 				{/* top left border */}
-				<div className="absolute bg-gradient-to-br from-slate-400 via-slate-300 h-60 w-60 rounded-lg -z-10">
-					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 left-5 top-5"></div>
+				<div className="absolute bg-gradient-to-br from-slate-400 via-slate-300 dark:via-slate-800 h-60 w-60 rounded-lg -z-10">
+					<div className="absolute bg-slate-300 dark:bg-slate-800 h-60 w-60 rounded-lg z-0 left-5 top-5"></div>
 				</div>
 
 				<nav className="relative col-span-3">
 					<div className="flex absolute right-0 m-5">
+						<RiHome2Fill className="icon" onClick={toggleHome} />
 						{
 							darkMode
 								? <HiSun className="icon" onClick={toggleDarkMode} />
 								: <HiOutlineMoon className="icon" onClick={toggleDarkMode} />
 						}
-						<RiHome2Fill className="icon" onClick={toggleHome} />
 						<Link href="mailto:everettlindsay@gmail.com">
 							<SiGmail className="icon" />
 						</Link>
@@ -91,11 +105,11 @@ export default function Home() {
 					{ showTailwind ? <Tailwind /> : null }
 				</div>
 
-				<div className="col-span-1">
+				<div className="col-span-1 ml-10 md:ml-0">
 					<h2>Demonstrations</h2>
-					<ul className="relative p-6 rounded-xl bg-gradient-to-br from-slate-400 via-slate-300">
+					<ul className="relative p-6 rounded-xl bg-gradient-to-br from-slate-400 via-slate-300 dark:via-slate-800">
 						<li className="leading-9">
-							<div className="absolute bg-slate-300 h-[100%] w-[100%] rounded-xl z-0 left-0.5 top-0.5"></div>
+							<div className="absolute bg-slate-300 dark:bg-slate-800 h-full w-full rounded-xl z-0 left-0.5 top-0.5"></div>
 							<a onClick={toggleMern} className="link-underline">MERN</a>
 						</li>
 						<li className="leading-9">
@@ -111,8 +125,8 @@ export default function Home() {
 				</div>
 
 				{/* bottom right border */}
-				<div className="absolute bg-gradient-to-br from-transparent via-slate-300 to-slate-400 h-60 w-60 rounded-lg z-10 bottom-0 right-0">
-					<div className="absolute bg-slate-300 h-60 w-60 rounded-lg z-0 right-5 bottom-5"></div>
+				<div className="absolute bg-gradient-to-br from-transparent via-slate-300 to-slate-400 dark:via-slate-800 dark:to-slate-400 h-60 w-60 rounded-lg z-10 bottom-0 right-0">
+					<div className="absolute bg-slate-300 dark:bg-slate-800 h-60 w-60 rounded-lg z-0 right-5 bottom-5"></div>
 				</div>
 			</div>
 		</div>
