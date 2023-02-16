@@ -7,10 +7,12 @@ export default function Tailwind() {
 			<h1 className="hdr1">Tailwind CSS</h1>
 			<div className="side-border">
 				<p>
-					This portfolio is overwhelmingly <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley</a>'s
-					design: give credit where credit is due. Refactoring his frontend into maintainable
-					Tailwind CSS struck me as a far more valuable demonstration than selling my
-					merits as a frontend designer.
+					Give credit where credit is due
+					to <a href="https://dunks1980.com/" className="link-underline" target="_blank">Ian Dunkerley</a>'s
+					design. Refactoring his frontend into maintainable
+					Tailwind CSS struck me as the more valuable demonstration
+					of my typical contribution to a team's productivity.
+					I <em>can</em> design, but fullstack development is my jam.
 				</p>
 				<ul className="capsules">
 					<li>Tailwind CSS</li>
