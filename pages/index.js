@@ -127,7 +127,7 @@ export default function Home() {
 				</div>
 
 				{/* bottom right border */}
-				<div className="absolute bg-gradient-to-br from-transparent via-slate-300 to-slate-400 dark:via-slate-800 dark:to-slate-400 h-60 w-60 rounded-lg z-10 bottom-0 right-0">
+				<div className="hidden sm:block absolute bg-gradient-to-br from-transparent via-slate-300 to-slate-400 dark:via-slate-800 dark:to-slate-400 h-60 w-60 rounded-lg z-10 bottom-0 right-0">
 					<div className="absolute bg-slate-300 dark:bg-slate-800 h-60 w-60 rounded-lg z-0 right-5 bottom-5"></div>
 				</div>
 			</div>
