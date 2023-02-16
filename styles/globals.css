@@ -62,4 +62,12 @@
 		@apply inline-block bg-slate-400 px-2 rounded-full
 		dark:text-slate-700;
 	}
+
+	.slide-in {
+		@apply visible;
+	}
+
+	.slide-out {
+		@apply hidden;
+	}
 }

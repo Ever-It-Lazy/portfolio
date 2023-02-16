@@ -98,11 +98,11 @@ export default function Home() {
 				</nav>
 
 				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32 h-auto sm:h-[28rem]">
-					{ showHome ? <Welcome /> : null }
-					{ showMern ? <Mern /> : null }
-					{ showTypeScript ? <TypeScript /> : null }
-					{ showNext ? <Next /> : null }
-					{ showTailwind ? <Tailwind /> : null }
+					<Welcome show={showHome} />
+					<Mern show={showMern} />
+					<TypeScript show={showTypeScript} />
+					<Next show={showNext} />
+					<Tailwind show={showTailwind} />
 				</div>
 
 				<div className="col-span-1 ml-10 md:ml-0">

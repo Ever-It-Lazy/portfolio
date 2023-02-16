@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { SiGithub } from 'react-icons/si';
 
-export default function TypeScript() {
+export default function TypeScript({ show }) {
 	return (
-		<div>
+		<div className={show ? "slide-in" : "slide-out"}>
 			<h1>TypeScript</h1>
 			<div className="side-border">
 				<p>

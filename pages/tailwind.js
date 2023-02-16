@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { SiGithub } from 'react-icons/si';
 
-export default function Tailwind() {
+export default function Tailwind({ show }) {
 	return (
-		<div>
+		<div className={show ? "slide-in" : "slide-out"}>
 			<h1 className="hdr1">Tailwind CSS</h1>
 			<div className="side-border">
 				<p>

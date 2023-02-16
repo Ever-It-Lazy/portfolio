@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { SiGithub } from 'react-icons/si';
 
-export default function Mern() {
+export default function Mern({ show }) {
 	return (
-		<div>
+		<div className={show ? "slide-in" : "slide-out"}>
 			<h1>MERN</h1>
 			<div className="side-border">
 				<p>

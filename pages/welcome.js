@@ -1,6 +1,6 @@
-export default function Welcome() {
+export default function Welcome({ show }) {
 	return (
-		<div>
+		<div className={show ? "slide-in" : "slide-out"}>
 			<h1>Hello World</h1>
 			<div className="side-border">
 				<p>
