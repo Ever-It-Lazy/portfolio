@@ -64,10 +64,14 @@
 	}
 
 	.slide-in {
-		@apply visible;
+		@apply absolute w-fit
+		transform duration-200
+		opacity-100 scale-x-100 translate-x-0;
 	}
 
 	.slide-out {
-		@apply hidden;
+		@apply absolute
+		transform duration-200
+		opacity-0 scale-x-0 translate-x-64;
 	}
 }

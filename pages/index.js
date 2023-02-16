@@ -77,7 +77,7 @@ export default function Home() {
 					<div className="absolute bg-slate-300 dark:bg-slate-800 h-60 w-60 rounded-lg z-0 left-5 top-5"></div>
 				</div>
 
-				<nav className="relative col-span-3">
+				<nav className="relative col-span-3 z-10">
 					<div className="flex absolute right-0 m-5">
 						<RiHome2Fill className="icon" onClick={toggleHome} />
 						{
@@ -97,12 +97,14 @@ export default function Home() {
 					</div>
 				</nav>
 
-				<div className="col-span-2 p-10 md:m-10 md:p-0 md:mx-32 h-auto sm:h-[28rem]">
-					<Welcome show={showHome} />
-					<Mern show={showMern} />
-					<TypeScript show={showTypeScript} />
-					<Next show={showNext} />
-					<Tailwind show={showTailwind} />
+				<div className="relative col-span-2 p-10 md:m-10 md:p-0 md:mx-32 ">
+					<div className="relative h-auto sm:h-[28rem]">
+						<Welcome show={showHome} />
+						<Mern show={showMern} />
+						<TypeScript show={showTypeScript} />
+						<Next show={showNext} />
+						<Tailwind show={showTailwind} />
+					</div>
 				</div>
 
 				<div className="col-span-1 ml-10 md:ml-0">
