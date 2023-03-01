@@ -12,7 +12,7 @@ export default function Next({ show }) {
 					bunch of Node packages into makeshift frameworks.
 				</p>
 				<p>
-					Well aware that my focus is fullstack web development,
+					Well aware that my focus is full stack web development,
 					I concentrated on finding the preexisting React framework
 					that already does this the best. Why reinvent the wheel?
 				</p>

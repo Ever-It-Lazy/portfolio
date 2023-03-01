@@ -12,7 +12,7 @@ export default function Tailwind({ show }) {
 					the inspiration. Refactoring his frontend into maintainable
 					Tailwind CSS struck me as the more valuable demonstration
 					of my typical contribution to a team's productivity.
-					I <em>can</em> design, but fullstack development is my jam.
+					I <em>can</em> design, but full stack development is my jam.
 				</p>
 				<ul className="capsules">
 					<li>Tailwind CSS</li>

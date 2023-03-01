@@ -5,7 +5,7 @@ export default function Welcome({ show }) {
 			<div className="side-border">
 				<p>
 					My name is Everett Lindsay. I've been living in Washington DC
-					for the past 20 years, working as a fullstack web developer.
+					for the past 20 years, working as a full stack web developer.
 				</p>
 				<p>
 					The government is slow to adopt new technologies.
