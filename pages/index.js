@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Next from './nextjs';
 import TypeScript from './typescript';
 import Tailwind from './tailwind';
+import GraphQL from './graphql';
 
 export default function Home() {
 	const [showHome, setShowHome] = useState(true);
@@ -16,6 +17,7 @@ export default function Home() {
 	const [showTypeScript, setShowTypeScript] = useState(false);
 	const [showNext, setShowNext] = useState(false);
 	const [showTailwind, setShowTailwind] = useState(false);
+	const [showGraphQL, setShowGraphQL] = useState(false);
 	const [darkMode, setDarkMode] = useState(false);
 
 	const toggleOff = () => {
@@ -24,6 +26,7 @@ export default function Home() {
 		setShowTypeScript(false);
 		setShowNext(false);
 		setShowTailwind(false);
+		setShowGraphQL(false);
 	}
 
 	const toggleHome = () => {
@@ -49,6 +52,11 @@ export default function Home() {
 	const toggleTailwind = () => {
 		toggleOff();
 		setShowTailwind(true);
+	};
+
+	const toggleGraphQL = () => {
+		toggleOff();
+		setShowGraphQL(true);
 	};
 
 	const toggleDarkMode = () => {
@@ -104,6 +112,7 @@ export default function Home() {
 						<TypeScript show={showTypeScript} />
 						<Next show={showNext} />
 						<Tailwind show={showTailwind} />
+						<GraphQL show={showGraphQL} />
 					</div>
 				</div>
 
@@ -122,6 +131,9 @@ export default function Home() {
 						</li>
 						<li className="leading-9">
 							<a onClick={toggleTailwind} className="link-underline">Tailwind CSS</a>
+						</li>
+						<li className="leading-9">
+							<a onClick={toggleGraphQL} className="link-underline">GraphQL</a>
 						</li>
 					</ul>
 				</div>
