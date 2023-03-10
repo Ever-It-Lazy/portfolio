@@ -22,7 +22,7 @@ export default function Mern({ show }) {
 					<li>Redux Toolkit</li>
 					<li>Postman</li>
 					<li>Cloudinary</li>
-					<li>Heroku</li>
+					<li>Render</li>
 					<li>Material UI</li>
 					<li>Vite</li>
 					<li>Chance</li>

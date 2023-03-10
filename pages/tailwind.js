@@ -17,7 +17,7 @@ export default function Tailwind({ show }) {
 				<ul className="capsules">
 					<li>Tailwind CSS</li>
 					<li>Next.js</li>
-					<li>Firebase</li>
+					<li>Render</li>
 				</ul>
 				<ul className="flex items-center mt-4 space-x-1">
 					<li>

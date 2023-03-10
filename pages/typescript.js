@@ -25,6 +25,7 @@ export default function TypeScript({ show }) {
 					<li>TypeScript</li>
 					<li>html-react-parser</li>
 					<li>react-beautiful-dnd</li>
+					<li>Firebase</li>
 				</ul>
 				<ul className="flex items-center mt-4 space-x-1">
 					<li>

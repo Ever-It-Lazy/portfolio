@@ -23,6 +23,7 @@ export default function GraphQL({ show }) {
 					<li>GraphiQL</li>
 					<li>Apollo</li>
 					<li>TypeScript</li>
+					<li>Render</li>
 				</ul>
 				<ul className="flex items-center mt-4 space-x-1">
 					<li>
