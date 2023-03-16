@@ -10,6 +10,7 @@ import Next from './nextjs';
 import TypeScript from './typescript';
 import Tailwind from './tailwind';
 import GraphQL from './graphql';
+import GoogleMaps from './googleMaps';
 
 export default function Home() {
 	const [showHome, setShowHome] = useState(true);
@@ -18,6 +19,7 @@ export default function Home() {
 	const [showNext, setShowNext] = useState(false);
 	const [showTailwind, setShowTailwind] = useState(false);
 	const [showGraphQL, setShowGraphQL] = useState(false);
+	const [showGoogleMaps, setShowGoogleMaps] = useState(false);
 	const [darkMode, setDarkMode] = useState(false);
 
 	const toggleOff = () => {
@@ -27,6 +29,7 @@ export default function Home() {
 		setShowNext(false);
 		setShowTailwind(false);
 		setShowGraphQL(false);
+		setShowGoogleMaps(false);
 	}
 
 	const toggleHome = () => {
@@ -57,6 +60,11 @@ export default function Home() {
 	const toggleGraphQL = () => {
 		toggleOff();
 		setShowGraphQL(true);
+	};
+
+	const toggleGoogleMaps = () => {
+		toggleOff();
+		setShowGoogleMaps(true);
 	};
 
 	const toggleDarkMode = () => {
@@ -113,6 +121,7 @@ export default function Home() {
 						<Next show={showNext} />
 						<Tailwind show={showTailwind} />
 						<GraphQL show={showGraphQL} />
+						<GoogleMaps show={showGoogleMaps} />
 					</div>
 				</div>
 
@@ -134,6 +143,9 @@ export default function Home() {
 						</li>
 						<li className="leading-9">
 							<a onClick={toggleGraphQL} className="link-underline">GraphQL</a>
+						</li>
+						<li className="leading-9">
+							<a onClick={toggleGoogleMaps} className="link-underline">Google Maps</a>
 						</li>
 					</ul>
 				</div>
