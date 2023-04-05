@@ -16,14 +16,19 @@ export default function Mern({ show }) {
 					rotation of popular client and server side technologies.
 				</p>
 				<ul className="capsules">
+					<li>Yarn</li>
+					<li>React Router</li>
+					<li>Node.js</li>
 					<li>Express</li>
 					<li>React-Bootstrap</li>
+					<li>Material UI</li>
 					<li>MongoDB</li>
+					<li>Mongoose</li>
 					<li>Redux Toolkit</li>
+					<li>Axios</li>
 					<li>Postman</li>
 					<li>Cloudinary</li>
 					<li>Render</li>
-					<li>Material UI</li>
 					<li>Vite</li>
 					<li>Chance</li>
 				</ul>
