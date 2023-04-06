@@ -107,7 +107,7 @@ export default function Home() {
 						<Link href="https://www.linkedin.com/in/everett-l-59249691/" target="_blank">
 							<SiLinkedin className="icon"/>
 						</Link>
-						<Link href="https://drive.google.com/file/d/1-66zH-VSrFpuf_KWtoh3Q5dPx-6HWn0C/view?usp=sharing" target="_blank">
+						<Link href="https://drive.google.com/file/d/1-VUxxxitaCXkci4cxanWQWnliXLrWLMB/view?usp=share_link" target="_blank">
 							<ImFilePdf className="icon" />
 						</Link>
 					</div>
