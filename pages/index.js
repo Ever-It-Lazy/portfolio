@@ -19,7 +19,7 @@ export default function Home() {
 	const [showNext, setShowNext] = useState(false);
 	const [showTailwind, setShowTailwind] = useState(false);
 	const [showGraphQL, setShowGraphQL] = useState(false);
-	const [showGoogleMaps, setShowGoogleMaps] = useState(false);
+	// const [showGoogleMaps, setShowGoogleMaps] = useState(false);
 	const [darkMode, setDarkMode] = useState(false);
 
 	const toggleOff = () => {
@@ -29,7 +29,7 @@ export default function Home() {
 		setShowNext(false);
 		setShowTailwind(false);
 		setShowGraphQL(false);
-		setShowGoogleMaps(false);
+		// setShowGoogleMaps(false);
 	}
 
 	const toggleHome = () => {
@@ -62,10 +62,10 @@ export default function Home() {
 		setShowGraphQL(true);
 	};
 
-	const toggleGoogleMaps = () => {
-		toggleOff();
-		setShowGoogleMaps(true);
-	};
+	// const toggleGoogleMaps = () => {
+	// 	toggleOff();
+	// 	setShowGoogleMaps(true);
+	// };
 
 	const toggleDarkMode = () => {
 		setDarkMode(!darkMode);
@@ -121,7 +121,7 @@ export default function Home() {
 						<Next show={showNext} />
 						<Tailwind show={showTailwind} />
 						<GraphQL show={showGraphQL} />
-						<GoogleMaps show={showGoogleMaps} />
+						{/* <GoogleMaps show={showGoogleMaps} /> */}
 					</div>
 				</div>
 
@@ -144,9 +144,9 @@ export default function Home() {
 						<li className="leading-9">
 							<a onClick={toggleGraphQL} className="link-underline">GraphQL</a>
 						</li>
-						<li className="leading-9">
+						{/* <li className="leading-9">
 							<a onClick={toggleGoogleMaps} className="link-underline">Google Maps</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 
